@@ -1,0 +1,6 @@
+{
+  "name": "Engineering Legends",
+  "description": "An interactive exploration of history's most influential engineers, their revolutionary designs, and lasting impact on modern civilization.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

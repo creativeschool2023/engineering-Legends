@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Fraunces", serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Editorial Light Museum Palette (Matching Reference Image) */
+  --color-canvas: #FAF8F5;
+  --color-card: #FFFFFF;
+  --color-card-subtle: #F4F1EA;
+  --color-ink: #0F172A;
+  --color-copper: #9E774F;
+  --color-copper-dark: #84603B;
+  --color-copper-light: #C4A482;
+  --color-border: #E5E0D5;
+  --color-border-dark: #D4CDBF;
+  --color-muted: #64748B;
+}
+
+@layer base {
+  body {
+    background-color: #FAF8F5;
+    color: #0F172A;
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+  }
+}
+
+@layer utilities {
+  .archival-grid {
+    background-image: linear-gradient(to right, rgba(15, 23, 42, 0.05) 1px, transparent 1px),
+                      linear-gradient(to bottom, rgba(15, 23, 42, 0.05) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+  
+  .hero-bg-grid {
+    background-image: 
+        linear-gradient(rgba(15, 23, 42, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(15, 23, 42, 0.04) 1px, transparent 1px);
+    background-size: 50px 50px;
+  }
+
+  .serif-italic {
+    font-family: var(--font-serif);
+    font-style: italic;
+  }
+
+  .text-copper {
+    color: #9E774F;
+  }
+
+  .bg-copper {
+    background-color: #9E774F;
+  }
+
+  .border-copper {
+    border-color: #9E774F;
+  }
+
+  .editorial-shadow {
+    box-shadow: 0 10px 30px -10px rgba(15, 23, 42, 0.08);
+  }
+}
