@@ -768,6 +768,26 @@ export const engineers: Engineer[] = [
       ]
     }
   }
+,
+  {
+  "id": "nelson-jackson",
+  "name": "Nelson Jackson",
+  "discipline": "Mechanical Engineering",
+  "title": "First Person to Cross the United States by Automobile",
+  "period": "1860s-1950s",
+  "image": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&q=80&w=800",
+  "bio": "Nelson Jackson was a famous American engineer and adventurer who made history by becoming the first person to cross the United States by automobile in 1903. He was born in 1873 and grew up with a passion for mechanics and engineering. Jackson's journey across the country was a remarkable feat that took 63 days to complete, covering over 4,500 miles of rugged terrain.",
+  "achievements": [
+    "First Transcontinental Automobile Trip",
+    "Pioneer in Road Construction"
+  ],
+  "contributions": [
+    {
+      "title": "Automotive Innovation",
+      "description": "Jackson's transcontinental journey helped to promote the development of the automobile industry and paved the way for modern road construction techniques."
+    }
+  ]
+}
 ];
 
 export const disciplinesData: Discipline[] = [
