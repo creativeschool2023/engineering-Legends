@@ -1,18 +1,25 @@
-```typescript
-// data.ts
-interface Topic {
-  id: number;
+interface Engineer {
   name: string;
-  description: string;
+  field: string;
+  contributions: string[];
 }
 
-const topic: Topic = {
-  id: 1,
-  name: 'Example Topic',
-  description: 'This is an example topic',
-};
+const EngineeringLegend: Engineer = {
+  name: 'Nikola Tesla',
+  field: 'Electrical Engineering',
+  contributions: [
+    'Alternating Current (AC)',
+    'Tesla Coil',
+    'Induction Motor',
+    'Polyphase System'
+  ]
+}
 
-export default topic;
-```
+const printEngineeringLegend = (engineer: Engineer) => {
+  console.log(`Name: ${engineer.name}`);
+  console.log(`Field: ${engineer.field}`);
+  console.log('Contributions:');
+  engineer.contributions.forEach(contribution => console.log(`- ${contribution}`));
+}
 
-If you provide the specific topic you'd like converted, I can give a more precise answer.
+printEngineeringLegend(EngineeringLegend);
