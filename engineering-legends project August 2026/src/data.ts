@@ -6,23 +6,13 @@ interface Topic {
   description: string;
 }
 
-interface InputTopic {
-  id: number;
-  name: string;
-  description: string;
-}
-
-const inputTopic: InputTopic = {
-  id: 1,
-  name: 'Sample Topic',
-  description: 'This is a sample topic',
-};
-
 const topic: Topic = {
-  id: inputTopic.id,
-  name: inputTopic.name,
-  description: inputTopic.description,
+  id: 1,
+  name: 'Example Topic',
+  description: 'This is an example topic',
 };
 
-export { topic };
+export default topic;
 ```
+
+If you provide the specific topic you'd like converted, I can give a more precise answer.
