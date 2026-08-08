@@ -34,3 +34,13 @@ export const disciplinesData = [
     description: 'Power generation and electromagnetic systems.'
   }
 ];
+
+export const voiceStoriesData = [
+  {
+    id: 'story-1',
+    author: 'Anonymous Engineer',
+    role: 'Structural Engineer',
+    content: 'Engineering is about solving real-world challenges with sustainable innovations.',
+    likes: 42
+  }
+];
