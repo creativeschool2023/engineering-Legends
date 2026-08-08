@@ -44,3 +44,36 @@ export const voiceStoriesData = [
     likes: 42
   }
 ];
+
+export const unSdgsData = [
+  {
+    id: 9,
+    title: 'Industry, Innovation and Infrastructure',
+    description: 'Build resilient infrastructure, promote inclusive and sustainable industrialization and foster innovation.'
+  }
+];
+
+export const timelineEventsData = [
+  {
+    year: '1888',
+    title: 'AC Motor Patent',
+    description: 'Nikola Tesla patents the induction motor.'
+  }
+];
+
+export const organizationsData = [
+  {
+    id: 'ieee',
+    name: 'IEEE',
+    description: 'Institute of Electrical and Electronics Engineers'
+  }
+];
+
+export const marvelsData = [
+  {
+    id: 'hoover-dam',
+    name: 'Hoover Dam',
+    country: 'USA',
+    description: 'A monumental concrete arch-gravity dam.'
+  }
+];
