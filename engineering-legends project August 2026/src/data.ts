@@ -32,6 +32,12 @@ export const disciplinesData = [
     title: 'Electrical Engineering',
     icon: 'Zap',
     description: 'Power generation and electromagnetic systems.'
+  },
+  {
+    id: 'civil',
+    title: 'Civil Engineering',
+    icon: 'Building',
+    description: 'Infrastructure and structural design.'
   }
 ];
 
@@ -49,7 +55,7 @@ export const unSdgsData = [
   {
     id: 9,
     title: 'Industry, Innovation and Infrastructure',
-    description: 'Build resilient infrastructure, promote inclusive and sustainable industrialization and foster innovation.'
+    description: 'Build resilient infrastructure, promote inclusive industrialization and foster innovation.'
   }
 ];
 
@@ -75,5 +81,13 @@ export const marvelsData = [
     name: 'Hoover Dam',
     country: 'USA',
     description: 'A monumental concrete arch-gravity dam.'
+  }
+];
+
+export const youngEngineerTips = [
+  {
+    id: 'tip-1',
+    title: 'Master Fundamentals',
+    description: 'Focus heavily on core engineering principles before specialized tools.'
   }
 ];
