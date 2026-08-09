@@ -1,12 +1,32 @@
 import { Engineer, Discipline, Organization, VoiceStory } from './types';
 
+// ─── FIX #2 & #3: Centralized constants instead of hardcoded repeat strings ───
+
+export const ERA_LABELS: Record<string, string> = {
+  ancient:     'Ancient Times (3000 BC – 1st Century BC)',
+  after_christ:'After Christ / Early AD Era (1st Century AD – 7th Century AD)',
+  medieval:    'Medieval Times & Golden Age (8th Century AD – 17th Century AD)',
+  modern:      'Modern Engineering (18th Century – Present)',
+};
+
+export const DISCIPLINE_CATEGORIES = {
+  CORE:          'Core & Traditional',
+  TECH:          'Technology & Information',
+  ENV:           'Environmental & Sustainable',
+  HEALTH:        'Health & Bio',
+  EXTREME:       'Space, Ocean & Extreme',
+  DESIGN:        'Design & Emerging',
+} as const;
+
+// ─────────────────────────────────────────────────────────────────────────────
+
 export const engineers: Engineer[] = [
   {
     id: 'imhotep',
     plateId: 'B-IMHOTEP',
     name: 'Imhotep of Memphis',
     era: 'ancient',
-    eraLabel: 'Ancient Times (3000 BC – 1st Century BC)',
+    eraLabel: ERA_LABELS.ancient,
     lifespan: 'c. 2650 BC — c. 2600 BC',
     nationality: 'Ancient Egyptian',
     location: 'Memphis & Saqqara, Ancient Egypt',
@@ -49,7 +69,7 @@ export const engineers: Engineer[] = [
     plateId: 'B-ARCHIMEDES',
     name: 'Archimedes of Syracuse',
     era: 'ancient',
-    eraLabel: 'Ancient Times (3000 BC – 1st Century BC)',
+    eraLabel: ERA_LABELS.ancient,
     lifespan: 'c. 287 BC — c. 212 BC',
     nationality: 'Ancient Greek',
     location: 'Syracuse, Magna Graecia (Sicily)',
@@ -92,7 +112,7 @@ export const engineers: Engineer[] = [
     plateId: 'B-HERO',
     name: 'Hero of Alexandria',
     era: 'after_christ',
-    eraLabel: 'After Christ / Early AD Era (1st Century AD – 7th Century AD)',
+    eraLabel: ERA_LABELS.after_christ,
     lifespan: 'c. 10 AD — c. 70 AD',
     nationality: 'Roman Greek',
     location: 'Library of Alexandria, Roman Egypt',
@@ -135,7 +155,7 @@ export const engineers: Engineer[] = [
     plateId: 'B-AL-KHWARIZMI',
     name: 'Muhammad al-Khwarizmi',
     era: 'medieval',
-    eraLabel: 'Medieval Times & Golden Age (8th Century AD – 17th Century AD)',
+    eraLabel: ERA_LABELS.medieval,
     lifespan: 'c. 780 AD — c. 850 AD',
     nationality: 'Persian Abbasid',
     location: 'House of Wisdom, Baghdad',
@@ -178,7 +198,7 @@ export const engineers: Engineer[] = [
     plateId: 'B-FATIMA-AL-FIHRI',
     name: 'Fatima al-Fihri',
     era: 'medieval',
-    eraLabel: 'Medieval Times & Golden Age (8th Century AD – 17th Century AD)',
+    eraLabel: ERA_LABELS.medieval,
     lifespan: 'c. 800 AD — c. 880 AD',
     nationality: 'Moroccan Idrisid',
     location: 'Fez, Morocco',
@@ -221,7 +241,7 @@ export const engineers: Engineer[] = [
     plateId: 'B-BANU-MUSA',
     name: 'Banu Musa Brothers',
     era: 'medieval',
-    eraLabel: 'Medieval Times & Golden Age (8th Century AD – 17th Century AD)',
+    eraLabel: ERA_LABELS.medieval,
     lifespan: 'c. 800 AD — c. 873 AD',
     nationality: 'Persian Abbasid',
     location: 'House of Wisdom, Baghdad',
@@ -263,7 +283,7 @@ export const engineers: Engineer[] = [
     plateId: 'B-AL-KINDI',
     name: 'Al-Kindi (Abu Yusuf)',
     era: 'medieval',
-    eraLabel: 'Medieval Times & Golden Age (8th Century AD – 17th Century AD)',
+    eraLabel: ERA_LABELS.medieval,
     lifespan: '801 AD — 873 AD',
     nationality: 'Arab Abbasid Caliphate',
     location: 'Kufa & Baghdad',
@@ -305,7 +325,7 @@ export const engineers: Engineer[] = [
     plateId: 'B-IBN-FIRNAS',
     name: 'Abbas ibn Firnas',
     era: 'medieval',
-    eraLabel: 'Medieval Times & Golden Age (8th Century AD – 17th Century AD)',
+    eraLabel: ERA_LABELS.medieval,
     lifespan: '810 AD — 887 AD',
     nationality: 'Andalusian (Caliphate of Córdoba)',
     location: 'Córdoba, Al-Andalus (Spain)',
@@ -348,7 +368,7 @@ export const engineers: Engineer[] = [
     plateId: 'B-AL-ZAHRAWI',
     name: 'Al-Zahrawi (Albucasis)',
     era: 'medieval',
-    eraLabel: 'Medieval Times & Golden Age (8th Century AD – 17th Century AD)',
+    eraLabel: ERA_LABELS.medieval,
     lifespan: '936 AD — 1013 AD',
     nationality: 'Andalusian (Caliphate of Córdoba)',
     location: 'El-Zahra, Córdoba, Al-Andalus',
@@ -390,7 +410,7 @@ export const engineers: Engineer[] = [
     plateId: 'B-MARIAM-AL-ASTROLABIYA',
     name: 'Mariam al-Astrolabiya',
     era: 'medieval',
-    eraLabel: 'Medieval Times & Golden Age (8th Century AD – 17th Century AD)',
+    eraLabel: ERA_LABELS.medieval,
     lifespan: 'c. 940 AD — c. 990 AD',
     nationality: 'Syrian Hamdanid',
     location: 'Aleppo, Syria',
@@ -432,7 +452,7 @@ export const engineers: Engineer[] = [
     plateId: 'B-IBN-AL-HAYTHAM',
     name: 'Ibn al-Haytham (Alhazen)',
     era: 'medieval',
-    eraLabel: 'Medieval Times & Golden Age (8th Century AD – 17th Century AD)',
+    eraLabel: ERA_LABELS.medieval,
     lifespan: '965 AD — 1040 AD',
     nationality: 'Arab Fatimid Caliphate',
     location: 'Basra & Cairo',
@@ -474,7 +494,7 @@ export const engineers: Engineer[] = [
     plateId: 'B-AL-BIRUNI',
     name: 'Al-Biruni (Abu Rayhan)',
     era: 'medieval',
-    eraLabel: 'Medieval Times & Golden Age (8th Century AD – 17th Century AD)',
+    eraLabel: ERA_LABELS.medieval,
     lifespan: '973 AD — 1048 AD',
     nationality: 'Persian Ghaznavid Empire',
     location: 'Kath, Khwarazm & Ghazni',
@@ -516,7 +536,7 @@ export const engineers: Engineer[] = [
     plateId: 'B-AL-JAZARI',
     name: 'Al-Jazari (Badi al-Zaman)',
     era: 'medieval',
-    eraLabel: 'Medieval Times & Golden Age (8th Century AD – 17th Century AD)',
+    eraLabel: ERA_LABELS.medieval,
     lifespan: '1136 AD — 1206 AD',
     nationality: 'Mesopotamian (Artuqid Dynasty)',
     location: 'Diyarbakir, Mesopotamia',
@@ -558,7 +578,7 @@ export const engineers: Engineer[] = [
     plateId: 'B-JAMES-WATT',
     name: 'James Watt',
     era: 'modern',
-    eraLabel: 'Modern Engineering (18th Century – Present)',
+    eraLabel: ERA_LABELS.modern,
     lifespan: '1736 — 1819',
     nationality: 'Scottish',
     location: 'Greenock & Birmingham, United Kingdom',
@@ -601,7 +621,7 @@ export const engineers: Engineer[] = [
     plateId: 'B-NIKOLA-TESLA',
     name: 'Nikola Tesla',
     era: 'modern',
-    eraLabel: 'Modern Engineering (18th Century – Present)',
+    eraLabel: ERA_LABELS.modern,
     lifespan: '1856 — 1943',
     nationality: 'Serbian-American',
     location: 'Smiljan, Graz, New York, Colorado Springs',
@@ -644,7 +664,7 @@ export const engineers: Engineer[] = [
     plateId: 'B-ADA-LOVELACE',
     name: 'Ada Lovelace',
     era: 'modern',
-    eraLabel: 'Modern Engineering (18th Century – Present)',
+    eraLabel: ERA_LABELS.modern,
     lifespan: '1815 — 1852',
     nationality: 'British',
     location: 'London & Surrey, United Kingdom',
@@ -687,7 +707,7 @@ export const engineers: Engineer[] = [
     plateId: 'B-IK-BRUNEL',
     name: 'Isambard Kingdom Brunel',
     era: 'modern',
-    eraLabel: 'Modern Engineering (18th Century – Present)',
+    eraLabel: ERA_LABELS.modern,
     lifespan: '1806 — 1859',
     nationality: 'British',
     location: 'Portsmouth, London, Bristol',
@@ -730,7 +750,7 @@ export const engineers: Engineer[] = [
     plateId: 'B-MARGARET-HAMILTON',
     name: 'Margaret Hamilton',
     era: 'modern',
-    eraLabel: 'Modern Engineering (18th Century – Present)',
+    eraLabel: ERA_LABELS.modern,
     lifespan: '1936 — Present',
     nationality: 'American',
     location: 'Cambridge, MA, USA',
@@ -767,75 +787,64 @@ export const engineers: Engineer[] = [
         { label: 'Fault Recovery Time', value: '0.00 seconds (seamless)' }
       ]
     }
-  }
-,
+  },
+  // ─── FIX #1: Nelson Jackson — Schema completely rewritten to match Engineer type ───
   {
-  "id": "nelson-jackson",
-  "name": "Nelson Jackson",
-  "discipline": "Mechanical Engineering",
-  "title": "First Person to Cross the United States by Automobile",
-  "period": "1860s-1950s",
-  "image": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&q=80&w=800",
-  "bio": "Nelson Jackson was a famous American engineer and adventurer who made history by becoming the first person to cross the United States by automobile in 1903. He was born in 1873 and grew up with a passion for mechanics and engineering. Jackson's journey across the country was a remarkable feat that took 63 days to complete, covering over 4,500 miles of rugged terrain.",
-  "achievements": [
-    "First Transcontinental Automobile Trip",
-    "Pioneer in Road Construction"
-  ],
-  "contributions": [
-    {
-      "title": "Automotive Innovation",
-      "description": "Jackson's transcontinental journey helped to promote the development of the automobile industry and paved the way for modern road construction techniques."
+    id: 'nelson-jackson',
+    plateId: 'B-NELSON-JACKSON',
+    name: 'Nelson Jackson',
+    era: 'modern',
+    eraLabel: ERA_LABELS.modern,
+    lifespan: '1872 — 1955',
+    nationality: 'American',
+    location: 'Burlington, Vermont & Transcontinental USA',
+    disciplines: ['Mechanical Engineering', 'Automotive Pioneering', 'Road Engineering'],
+    accomplishments: [
+      'First Transcontinental Automobile Trip (1903)',
+      'Pioneer in Road Construction Advocacy',
+      'Cross-Country Navigation Without Maps',
+      'Early Automobile Reliability Engineering'
+    ],
+    quote: '"I believed it could be done, and I was willing to stake my reputation and my money on it."',
+    quoteContext: 'Jackson became the first person to cross the United States by automobile in 1903, completing 4,500 miles in 63 days.',
+    biography: {
+      lead: 'Horatio Nelson Jackson was an American physician, adventurer, and mechanical pioneer who made history by becoming the first person to cross the United States by automobile in 1903.',
+      full: [
+        'On a $50 bet, Jackson set off from San Francisco in a 20-horsepower Winton touring car with mechanic Sewall Crocker. Covering over 4,500 miles of dirt tracks, riverbed paths, and open prairie without a reliable road map, they reached New York City in 63 days.',
+        'His journey exposed the desperate need for national road infrastructure and directly accelerated the Good Roads Movement, laying political and engineering groundwork for the U.S. federal highway system.'
+      ]
+    },
+    image: 'nelson-jackson',
+    technicalMetrics: [
+      { label: 'Total Distance Covered', value: '4,500', unit: 'MILES', numberValue: 4500 },
+      { label: 'Journey Duration', value: '63', unit: 'DAYS', numberValue: 63 },
+      { label: 'Engine Output', value: '20', unit: 'HORSEPOWER', numberValue: 20 }
+    ],
+    blueprint: {
+      title: 'The 1903 Winton Touring Car',
+      subtitle: 'Early Internal Combustion Automobile Drive System',
+      concept: 'A 20-horsepower single-cylinder gasoline engine driving rear wheels via a chain transmission, mounted on a wooden chassis with steel leaf-spring suspension for rough terrain endurance.',
+      principles: [
+        'Internal combustion converts gasoline into mechanical torque via piston reciprocation.',
+        'Chain drive transfers rotational power from engine crankshaft to rear axle.',
+        'Steel leaf-spring suspension absorbs impact loads across unpaved terrain.'
+      ],
+      specs: [
+        { label: 'Engine Displacement', value: 'Single-cylinder gasoline' },
+        { label: 'Power Output', value: '20 HP' },
+        { label: 'Transmission Type', value: 'Chain drive' },
+        { label: 'Chassis Material', value: 'Ash wood / steel frame' }
+      ]
     }
-  ]
-}
-,
-  {
-  "id": "nikola-tesla",
-  "name": "Nikola Tesla",
-  "discipline": "Electrical Engineering",
-  "title": "Inventor and Engineer",
-  "period": "1856-1943",
-  "image": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&q=80&w=800",
-  "bio": "Nikola Tesla was a Serbian-American inventor, electrical engineer, and futurist best known for his contributions to the development of the modern alternating current electricity system. He is widely recognized as one of the most important inventors and engineers of the 20th century.",
-  "achievements": [
-    "Developed the AC system",
-    " Held over 300 patents"
-  ],
-  "contributions": [
-    {
-      "title": "Alternating Current System",
-      "description": "Tesla's work on the AC system revolutionized the way electricity is transmitted and used, enabling the efficient transmission of power over long distances."
-    }
-  ]
-}
-,
-  {
-  "id": "nikola-tesla",
-  "name": "Nikola Tesla",
-  "discipline": "Electrical Engineering",
-  "title": "Inventor and Engineer",
-  "period": "1856-1943",
-  "image": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&q=80&w=800",
-  "bio": "Nikola Tesla was a Serbian-American inventor, electrical engineer, mechanical engineer, and futurist best known for his contributions to the development of the modern alternating current (AC) electricity system. He is widely recognized as one of the most important inventors and engineers of the 20th century.",
-  "achievements": [
-    "Developed the AC system",
-    "Hold over 300 patents"
-  ],
-  "contributions": [
-    {
-      "title": "Alternating Current System",
-      "description": "Tesla's work on the AC system revolutionized the way electricity is transmitted and used around the world."
-    }
-  ]
-}
+  },
 ];
 
 export const disciplinesData: Discipline[] = [
-  // Category 1: Core & Traditional
+  // ─── Category: Core & Traditional ───
   {
     id: 'civil',
     name: 'Civil & Structural Engineering',
-    category: 'Core & Traditional',
+    category: DISCIPLINE_CATEGORIES.CORE,
     difficulty: 88,
     description: 'Design, construction, and structural maintenance of bridges, skyscrapers, dams, transit tunnels, and resilient urban infrastructure.',
     focusAreas: ['Load-Bearing Design', 'Geotechnical Mechanics', 'Seismic Dampeners', 'Urban Transit Networks'],
@@ -845,7 +854,7 @@ export const disciplinesData: Discipline[] = [
   {
     id: 'mechanical',
     name: 'Mechanical Engineering',
-    category: 'Core & Traditional',
+    category: DISCIPLINE_CATEGORIES.CORE,
     difficulty: 90,
     description: 'Design and manufacturing of kinetic power systems, engines, robotics, thermodynamics, and fluid dynamics machinery.',
     focusAreas: ['Kinematic Chains', 'Thermodynamic Cycles', 'Fluid Dynamics', 'HVAC & Refrigeration'],
@@ -855,7 +864,7 @@ export const disciplinesData: Discipline[] = [
   {
     id: 'electrical',
     name: 'Electrical & Power Systems',
-    category: 'Core & Traditional',
+    category: DISCIPLINE_CATEGORIES.CORE,
     difficulty: 89,
     description: 'High-voltage grid distribution, electromagnetic fields, electrical generators, transformers, and renewable energy conversion.',
     focusAreas: ['Grid Transmission', 'Electromagnetics', 'Power Electronics', 'Substation Automation'],
@@ -865,7 +874,7 @@ export const disciplinesData: Discipline[] = [
   {
     id: 'chemical',
     name: 'Chemical & Process Engineering',
-    category: 'Core & Traditional',
+    category: DISCIPLINE_CATEGORIES.CORE,
     difficulty: 89,
     description: 'Large-scale chemical reactors, catalytic refining, polymer synthesis, and industrial mass-transfer processes.',
     focusAreas: ['Reactor Kinetics', 'Mass Transfer', 'Refinery Catalysts', 'Polymerization'],
@@ -875,7 +884,7 @@ export const disciplinesData: Discipline[] = [
   {
     id: 'computer-hardware',
     name: 'Computer Hardware & Microprocessors',
-    category: 'Core & Traditional',
+    category: DISCIPLINE_CATEGORIES.CORE,
     difficulty: 95,
     description: 'Semiconductor logic gates, silicon lithography, microarchitecture, PCB routing, and high-frequency digital signal integrity.',
     focusAreas: ['Nanometer Lithography', 'Logic Gate Trees', 'RISC/CISC Architecture', 'Bus Bandwidth'],
@@ -883,11 +892,11 @@ export const disciplinesData: Discipline[] = [
     iconName: 'Cpu'
   },
 
-  // Category 2: Technology & Information
+  // ─── Category: Technology & Information ───
   {
     id: 'software',
     name: 'Software Engineering & Systems',
-    category: 'Technology & Information',
+    category: DISCIPLINE_CATEGORIES.TECH,
     difficulty: 91,
     description: 'Distributed cloud systems, microservice fault tolerance, compiler optimization, cryptographic protocols, and core OS kernels.',
     focusAreas: ['Distributed Consensus', 'Asynchronous I/O', 'Memory Safety', 'Cryptographic Hashing'],
@@ -897,7 +906,7 @@ export const disciplinesData: Discipline[] = [
   {
     id: 'data-engineering',
     name: 'Data Engineering & Infrastructure',
-    category: 'Technology & Information',
+    category: DISCIPLINE_CATEGORIES.TECH,
     difficulty: 87,
     description: 'Petabyte-scale distributed data pipelines, columnar storage engines, real-time streaming, and transactional database internals.',
     focusAreas: ['ETL Pipelines', 'Columnar Parquet Stores', 'Stream Processing', 'Distributed Locking'],
@@ -907,7 +916,7 @@ export const disciplinesData: Discipline[] = [
   {
     id: 'ai-ml',
     name: 'AI & Machine Learning Engineering',
-    category: 'Technology & Information',
+    category: DISCIPLINE_CATEGORIES.TECH,
     difficulty: 95,
     description: 'Transformer neural network architectures, GPU cluster parallelism, weight quantization, and deep reinforcement learning.',
     focusAreas: ['Attention Mechanisms', 'FP8/INT4 Quantization', 'Distributed Tensor Parallelism', 'Loss Function Tuning'],
@@ -917,7 +926,7 @@ export const disciplinesData: Discipline[] = [
   {
     id: 'network',
     name: 'Network & Telecommunications',
-    category: 'Technology & Information',
+    category: DISCIPLINE_CATEGORIES.TECH,
     difficulty: 86,
     description: 'Subsea fiber-optic cables, 5G/6G beamforming arrays, BGP routing topologies, and satellite mesh communication constellations.',
     focusAreas: ['Subsea Fiber WDM', '5G NR Beamforming', 'BGP Path Routing', 'Low-Earth Orbit Mesh'],
@@ -925,11 +934,11 @@ export const disciplinesData: Discipline[] = [
     iconName: 'Network'
   },
 
-  // Category 3: Environmental & Sustainable
+  // ─── Category: Environmental & Sustainable ───
   {
     id: 'environmental',
     name: 'Environmental & Climate Engineering',
-    category: 'Environmental & Sustainable',
+    category: DISCIPLINE_CATEGORIES.ENV,
     difficulty: 88,
     description: 'Direct air carbon capture, industrial wastewater purification, toxic remediation, and climate risk mitigation systems.',
     focusAreas: ['Direct Air Capture', 'Contaminant Sorption', 'Hydrological Modeling', 'Desalination Plants'],
@@ -939,7 +948,7 @@ export const disciplinesData: Discipline[] = [
   {
     id: 'renewable-energy',
     name: 'Renewable & Battery Engineering',
-    category: 'Environmental & Sustainable',
+    category: DISCIPLINE_CATEGORIES.ENV,
     difficulty: 92,
     description: 'Offshore wind turbine mechanics, perovskite solar photovoltaics, grid-scale solid-state battery energy storage.',
     focusAreas: ['Solid-State Electrolytes', 'Perovskite Photovoltaics', 'Offshore Turbines', 'Grid-Forming Inverters'],
@@ -949,7 +958,7 @@ export const disciplinesData: Discipline[] = [
   {
     id: 'agricultural-food',
     name: 'Agricultural & Hydroponic Systems',
-    category: 'Environmental & Sustainable',
+    category: DISCIPLINE_CATEGORIES.ENV,
     difficulty: 85,
     description: 'Vertical indoor farming, automated nutrient recirculation, cold-chain refrigeration logistics, and precision drip irrigation.',
     focusAreas: ['Controlled Environment Ag', 'Nutrient Dosing Loops', 'Cold-Chain Refrigeration', 'Crop Sensor Analytics'],
@@ -957,11 +966,11 @@ export const disciplinesData: Discipline[] = [
     iconName: 'Sprout'
   },
 
-  // Category 4: Health & Bio
+  // ─── Category: Health & Bio ───
   {
     id: 'biomedical',
     name: 'Biomedical & Neural Devices',
-    category: 'Health & Bio',
+    category: DISCIPLINE_CATEGORIES.HEALTH,
     difficulty: 94,
     description: 'Implantable cardiac pacemakers, brain-computer interfaces, prosthetic bionics, medical imaging magnets, and artificial organs.',
     focusAreas: ['Biocompatible Titanium', 'Neural Signal Amplification', 'Ultra-Low Power Circuits', 'MRI Magnet Design'],
@@ -971,7 +980,7 @@ export const disciplinesData: Discipline[] = [
   {
     id: 'biotechnology',
     name: 'Biotechnology & Genetic Engineering',
-    category: 'Health & Bio',
+    category: DISCIPLINE_CATEGORIES.HEALTH,
     difficulty: 94,
     description: 'CRISPR gene-editing tools, bioreactor fermentation scaling, mRNA synthetic biological manufacturing, and protein folding.',
     focusAreas: ['CRISPR-Cas9 Editing', 'Bioreactor Fluid Dynamics', 'mRNA Lipid Nanoparticles', 'Protein Structure AI'],
@@ -981,7 +990,7 @@ export const disciplinesData: Discipline[] = [
   {
     id: 'pharmaceutical',
     name: 'Pharmaceutical Process Engineering',
-    category: 'Health & Bio',
+    category: DISCIPLINE_CATEGORIES.HEALTH,
     difficulty: 90,
     description: 'Sterile cleanroom HVAC, automated high-throughput drug tableting, chemical crystallization, and cold-chain vaccine formulation.',
     focusAreas: ['ISO Class 5 Cleanrooms', 'Continuous Crystallization', 'Lyophilization', 'Aseptic Filling'],
@@ -989,11 +998,11 @@ export const disciplinesData: Discipline[] = [
     iconName: 'Pill'
   },
 
-  // Category 5: Space, Ocean & Extreme
+  // ─── Category: Space, Ocean & Extreme ───
   {
     id: 'aerospace',
     name: 'Aerospace & Rocket Propulsion',
-    category: 'Space, Ocean & Extreme',
+    category: DISCIPLINE_CATEGORIES.EXTREME,
     difficulty: 96,
     description: 'Cryogenic rocket engine turbopumps, supersonic wing aerodynamics, orbital re-entry thermal shields, and satellite guidance.',
     focusAreas: ['Staged Combustion Turbopumps', 'Hypersonic Aerodynamics', 'PICA-X Heatshields', 'Star Tracker Guidance'],
@@ -1003,7 +1012,7 @@ export const disciplinesData: Discipline[] = [
   {
     id: 'marine',
     name: 'Marine & Offshore Engineering',
-    category: 'Space, Ocean & Extreme',
+    category: DISCIPLINE_CATEGORIES.EXTREME,
     difficulty: 91,
     description: 'Deepwater oil drilling platforms, autonomous underwater submersibles, icebreaker hull dynamics, and naval hydrodynamics.',
     focusAreas: ['Deepwater Mooring', 'Titanium Pressure Hulls', 'Cavitation-Resistant Props', 'Subsea Robotics'],
@@ -1013,7 +1022,7 @@ export const disciplinesData: Discipline[] = [
   {
     id: 'nuclear',
     name: 'Nuclear & Fusion Engineering',
-    category: 'Space, Ocean & Extreme',
+    category: DISCIPLINE_CATEGORIES.EXTREME,
     difficulty: 95,
     description: 'Generation IV fission reactors, Tokamak magnetic plasma confinement, neutron radiation shielding, and nuclear waste vitrification.',
     focusAreas: ['Tokamak Superconducting Coils', 'Neutron Shielding Alloys', 'Liquid Metal Coolants', 'Plasma Stability'],
@@ -1021,11 +1030,11 @@ export const disciplinesData: Discipline[] = [
     iconName: 'Atom'
   },
 
-  // Category 6: Design & Emerging
+  // ─── Category: Design & Emerging ───
   {
     id: 'robotics',
     name: 'Robotics & Mechatronics',
-    category: 'Design & Emerging',
+    category: DISCIPLINE_CATEGORIES.DESIGN,
     difficulty: 93,
     description: 'Bipedal humanoid motion synthesis, harmonic drive actuators, LiDAR SLAM spatial positioning, and real-time sensor fusion.',
     focusAreas: ['Harmonic Drive Torque', 'LiDAR SLAM Positioning', 'Inverse Kinematics', 'Impedance Control'],
@@ -1035,7 +1044,7 @@ export const disciplinesData: Discipline[] = [
   {
     id: 'nanotechnology',
     name: 'Nanotechnology & Molecular Machines',
-    category: 'Design & Emerging',
+    category: DISCIPLINE_CATEGORIES.DESIGN,
     difficulty: 96,
     description: 'Carbon nanotube synthesis, atomic layer deposition, molecular rotors, and quantum dot semiconductor displays.',
     focusAreas: ['Atomic Layer Deposition', 'Carbon Nanotube Chiralities', 'Quantum Dot Crystals', 'Scanning Tunneling Probes'],
@@ -1045,7 +1054,7 @@ export const disciplinesData: Discipline[] = [
   {
     id: 'acoustical',
     name: 'Acoustical & Noise Engineering',
-    category: 'Design & Emerging',
+    category: DISCIPLINE_CATEGORIES.DESIGN,
     difficulty: 88,
     description: 'Architectural hall reverberation, active noise cancellation algorithms, acoustic dampening metamaterials, and sonar transducer design.',
     focusAreas: ['Raytracing Reverberation', 'Active Anti-Phase Cancellation', 'Phased Array Transducers', 'Anechoic Chamber Isolators'],
