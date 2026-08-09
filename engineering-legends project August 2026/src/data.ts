@@ -788,6 +788,26 @@ export const engineers: Engineer[] = [
     }
   ]
 }
+,
+  {
+  "id": "nikola-tesla",
+  "name": "Nikola Tesla",
+  "discipline": "Electrical Engineering",
+  "title": "Inventor and Engineer",
+  "period": "1856-1943",
+  "image": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&q=80&w=800",
+  "bio": "Nikola Tesla was a Serbian-American inventor, electrical engineer, and futurist best known for his contributions to the development of the modern alternating current electricity system. He is widely recognized as one of the most important inventors and engineers of the 20th century.",
+  "achievements": [
+    "Developed the AC system",
+    " Held over 300 patents"
+  ],
+  "contributions": [
+    {
+      "title": "Alternating Current System",
+      "description": "Tesla's work on the AC system revolutionized the way electricity is transmitted and used, enabling the efficient transmission of power over long distances."
+    }
+  ]
+}
 ];
 
 export const disciplinesData: Discipline[] = [
