@@ -1300,5 +1300,24 @@ export const unSdgsData = [
   { id: 14, title: 'Life Below Water', color: '#0A97D9', icon: '14', alignment: 'Subsea robot monitoring, ocean cleanup barges, and marine vessel hydrodynamic anti-fouling.' },
   { id: 15, title: 'Life on Land', color: '#56C02B', icon: '15', alignment: 'Drone forest mapping, soil erosion engineering barriers, and wildlife corridor overpasses.' },
   { id: 16, title: 'Peace, Justice & Strong Institutions', color: '#00689D', icon: '16', alignment: 'Auditable cryptographic voting systems, infrastructure integrity contracts, and ethical AI standards.' },
-  { id: 17, title: 'Partnerships for the Goals', color: '#19486A', icon: '17', alignment: 'Global engineering federations (WFEO, UNESCO, IEEE) uniting international technical expertise.' }
+  { id: 17, title: 'Partnerships for the Goals', color: '#19486A', icon: '17', alignment: 'Global engineering federations (WFEO, UNESCO, IEEE) uniting international technical expertise.' },
+  {
+    id: "nikola-tesla",
+    plateId: "B-NIKOLA-T",
+    name: "Nikola Tesla",
+    era: "industrial",
+    eraLabel: "Industrial Era",
+    lifespan: "1856-1943",
+    nationality: "Serbian-American",
+    location: "Smiljan, Croatia",
+    disciplines: ["Electrical Engineering","Mechanical Engineering","Physics"],
+    image: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&q=80&w=800",
+    biography: {
+      lead: "Nikola Tesla was a prolific inventor and engineer who made groundbreaking contributions to the development of electrical power systems. Born in Smilja...",
+      full: "Nikola Tesla was a prolific inventor and engineer who made groundbreaking contributions to the development of electrical power systems. Born in Smiljan, Croatia, Tesla immigrated to the United States in 1884 and worked for Thomas Edison before striking out on his own. He holds over 300 patents in his name, including the design of the modern alternating current (AC) electricity system."
+    },
+    accomplishments: ["Developed the AC electricity system","Designed the first hydroelectric power plant","Experimented with X-ray technology and wireless power transmission","Held over 300 patents in his name"],
+    quote: "The present is theirs; the future, for which I have really worked, is mine.",
+    quoteContext: "From an interview with The New York Times, 1933"
+  }
 ];
