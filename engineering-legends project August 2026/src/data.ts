@@ -1339,5 +1339,25 @@ export const unSdgsData = [
     accomplishments: ["Developed the AC electricity system","Designed the first hydroelectric power plant","Experimented with X-ray technology and wireless power transmission","Held over 300 patents in his name"],
     quote: "The present is theirs; the future, for which I have really worked, is mine.",
     quoteContext: "From an interview with The New York Times, 1933"
+  },
+  {
+    id: "isambard-kingdom-brunel",
+    plateId: "B-ISAMBARD",
+    name: "Isambard Kingdom Brunel",
+    era: "industrial",
+    eraLabel: "Industrial Era",
+    lifespan: "1806-1859",
+    nationality: "British",
+    location: "Portsmouth, England",
+    disciplines: ["Mechanical Engineering","Civil Engineering"],
+    image: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&q=80&w=800",
+    biography: {
+      lead: "Pioneer in historic engineering breakthroughs.",
+      full: "Contributed foundational principles to applied engineering and technology."
+    },
+    voiceStory: "Imagine stepping into the workshop of a genius...",
+    accomplishments: ["Designed the Great Western Railway, one of the first major railways in the UK","Developed the SS Great Western, the first steamship to cross the Atlantic","Built the Clifton Suspension Bridge, a iconic landmark in Bristol, England","Designed the Royal Albert Bridge, a major railway bridge in Cornwall, England"],
+    quote: "I am opposed to the laying down of rules or conditions to be observed in the construction of bridges lest the progress of improvement tomorrow might be embarrassed or shackled by recording or registering as law the prejudices or errors of today.",
+    quoteContext: "From his speech to the Institution of Civil Engineers in 1845"
   }
 ];
