@@ -1359,5 +1359,25 @@ export const unSdgsData = [
     accomplishments: ["Designed the Great Western Railway, one of the first major railways in the UK","Developed the SS Great Western, the first steamship to cross the Atlantic","Built the Clifton Suspension Bridge, a iconic landmark in Bristol, England","Designed the Royal Albert Bridge, a major railway bridge in Cornwall, England"],
     quote: "I am opposed to the laying down of rules or conditions to be observed in the construction of bridges lest the progress of improvement tomorrow might be embarrassed or shackled by recording or registering as law the prejudices or errors of today.",
     quoteContext: "From his speech to the Institution of Civil Engineers in 1845"
+  },
+  {
+    id: "isambard-kingdom-brunel",
+    plateId: "B-ISAMBARD",
+    name: "Isambard Kingdom Brunel",
+    era: "industrial",
+    eraLabel: "Industrial Revolution",
+    lifespan: "1806-1859",
+    nationality: "British",
+    location: "Portsmouth, England",
+    disciplines: ["Civil Engineering","Mechanical Engineering","Naval Architecture"],
+    image: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&q=80&w=800",
+    biography: {
+      lead: "Pioneer in historic engineering breakthroughs.",
+      full: "Contributed foundational principles to applied engineering and technology."
+    },
+    voiceStory: "Imagine stepping into the workshop of a genius...",
+    accomplishments: ["Designed the Great Western Railway, one of the first major railways in the UK","Built the Clifton Suspension Bridge, a iconic landmark in Bristol","Constructed the SS Great Britain, the largest ship in the world at the time of its launch"],
+    quote: "I am opposed to the laying down of rules or conditions to be observed in the construction of bridges lest the progress of improvement tomorrow might be embarrassed or shackled by recording or registering as law the prejudices or errors of today.",
+    quoteContext: "From a letter to the Royal Commission on the State of the Harbour of Bristol, 1845"
   }
 ];
