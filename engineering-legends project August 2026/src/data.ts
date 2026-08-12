@@ -1379,5 +1379,25 @@ export const unSdgsData = [
     accomplishments: ["Designed the Great Western Railway, one of the first major railways in the UK","Built the Clifton Suspension Bridge, a iconic landmark in Bristol","Constructed the SS Great Britain, the largest ship in the world at the time of its launch"],
     quote: "I am opposed to the laying down of rules or conditions to be observed in the construction of bridges lest the progress of improvement tomorrow might be embarrassed or shackled by recording or registering as law the prejudices or errors of today.",
     quoteContext: "From a letter to the Royal Commission on the State of the Harbour of Bristol, 1845"
+  },
+  {
+    id: "nikola-tesla",
+    plateId: "B-NIKOLA-T",
+    name: "Nikola Tesla",
+    era: "industrial",
+    eraLabel: "Industrial Era",
+    lifespan: "1856-1943",
+    nationality: "Serbian-American",
+    location: "Smiljan, Croatia",
+    disciplines: ["Electrical Engineering","Mechanical Engineering","Physics"],
+    image: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&q=80&w=800",
+    biography: {
+      lead: "Pioneer in historic engineering breakthroughs.",
+      full: "Contributed foundational principles to applied engineering and technology."
+    },
+    voiceStory: "Imagine stepping into the workshop of a genius...",
+    accomplishments: ["Developed the AC system, which has become the standard for electricity distribution worldwide","Designed the first hydroelectric power plant in Niagara Falls","Experimented with X-ray technology and wireless communication","Held over 300 patents in his name, including those for the electric motor and generator"],
+    quote: "The present is theirs; the future, for which I really worked, is mine.",
+    quoteContext: "From an interview with John T. Morris, 1893"
   }
 ];
