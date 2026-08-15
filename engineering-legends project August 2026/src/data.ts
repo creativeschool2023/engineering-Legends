@@ -876,7 +876,27 @@ export const engineers: Engineer[] = [
       "description": "Transformed the way electricity is transmitted and used worldwide"
     }
   ]
-}
+},
+  {
+    id: "isambard-kingdom-brunel",
+    plateId: "B-ISAMBARD",
+    name: "Isambard Kingdom Brunel",
+    era: "industrial",
+    eraLabel: "Industrial Era",
+    lifespan: "1806-1859",
+    nationality: "British",
+    location: "Portsmouth, England",
+    disciplines: ["Civil Engineering","Mechanical Engineering","Naval Architecture"],
+    image: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&q=80&w=800",
+    biography: {
+      lead: "Pioneer in historic engineering breakthroughs.",
+      full: "Contributed foundational principles to applied engineering and technology."
+    },
+    voiceStory: "Imagine stepping into the workshop of a genius...",
+    accomplishments: ["Designed the Clifton Suspension Bridge","Built the SS Great Britain, a pioneering steamship","Developed the Great Western Railway, a major railway line in the UK"],
+    quote: "I am opposed to the laying down of rules or conditions to be observed in the construction of bridges lest the progress of improvement tomorrow might be embarrassed or shackled by recording or registering as law the prejudices or errors of today.",
+    quoteContext: "From a letter to the Institution of Civil Engineers, discussing the importance of innovation and flexibility in engineering design"
+  }
 ];
 
 export const disciplinesData: Discipline[] = [
