@@ -1343,3 +1343,4 @@ export const youngEngineerTips = [
   { step: '08', title: 'Academic & Institutional Governance', description: 'Write technical papers, mentor younger students, and participate in ISO/IEEE standard drafting committees.' }
 ];
 
+export const unSdgsData = [];
