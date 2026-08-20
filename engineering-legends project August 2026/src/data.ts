@@ -896,8 +896,27 @@ export const engineers: Engineer[] = [
     accomplishments: ["Designed the Clifton Suspension Bridge","Built the SS Great Britain, a pioneering steamship","Developed the Great Western Railway, a major railway line in the UK"],
     quote: "I am opposed to the laying down of rules or conditions to be observed in the construction of bridges lest the progress of improvement tomorrow might be embarrassed or shackled by recording or registering as law the prejudices or errors of today.",
     quoteContext: "From a letter to the Institution of Civil Engineers, discussing the importance of innovation and flexibility in engineering design"
-  },
-
+  },,
+  {
+    id: "alexander-graham-bell",
+    plateId: "B-ALEXANDE",
+    name: "Alexander Graham Bell",
+    era: "industrial",
+    eraLabel: "Industrial Era",
+    lifespan: "1847–1922",
+    nationality: "Scottish-American",
+    location: "United States",
+    disciplines: ["Telecommunications","Electrical Engineering","Acoustics","Inventing"],
+    image: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&q=80&w=800",
+    biography: {
+      lead: "Pioneer in historic engineering breakthroughs.",
+      full: "Contributed foundational principles to applied engineering and technology."
+    },
+    voiceStory: "Imagine stepping into the workshop of a genius...",
+    accomplishments: ["Invented and patented the first practical telephone in 1876 (U.S. Patent No. 174,465).","Co‑founded the Bell Telephone Company, which later evolved into AT&T, a cornerstone of the global telecommunications industry.","Developed the photophone, an early device for transmitting sound on a beam of light, foreshadowing modern fiber‑optic communication.","Founded the American Association to Promote the Teaching of Speech to the Deaf, advancing education and research for the deaf community."],
+    quote: "When one door closes, another opens; but we often look so long at the closed door that we do not see the one which has been opened for us.",
+    quoteContext: "Bell reportedly said this in a 1912 interview reflecting on his numerous inventions and the evolving nature of scientific discovery."
+  }
 ];
 
 export const disciplinesData: Discipline[] = [
