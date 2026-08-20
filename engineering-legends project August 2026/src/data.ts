@@ -837,6 +837,86 @@ export const engineers: Engineer[] = [
       ]
     }
   },
+,
+  {
+  "id": " nikola-tesla",
+  "name": "Nikola Tesla",
+  "discipline": "Electrical Engineering",
+  "title": "Pioneering Inventor and Engineer",
+  "period": "1856-1943",
+  "image": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&q=80&w=800",
+  "bio": "Nikola Tesla was a Serbian-American inventor, electrical engineer, and futurist best known for his contributions to the development of the modern alternating current (AC) electricity system. He is widely recognized as one of the most important inventors and engineers of the 20th century.",
+  "achievements": [
+    "Developed the AC motor",
+    "Improved the electric power distribution system"
+  ],
+  "contributions": [
+    {
+      "title": "Alternating Current System",
+      "description": "Tesla's work on the AC system revolutionized the way electricity is transmitted and used, enabling the efficient transmission of power over long distances."
+    }
+  ]
+}
+,
+  {
+  "id": "nikola-tesla",
+  "name": "Nikola Tesla",
+  "discipline": "Electrical Engineering",
+  "title": "Inventor and Engineer",
+  "period": "1856-1943",
+  "image": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&q=80&w=800",
+  "bio": "Nikola Tesla was a Serbian-American inventor, electrical engineer, and futurist best known for his contributions to the development of the modern alternating current electricity system. He emigrated to the United States in 1884 and worked for Thomas Edison in New York City before striking out on his own.",
+  "achievements": [
+    "Developed the AC system",
+    "Hold over 300 patents in his name"
+  ],
+  "contributions": [
+    {
+      "title": "Alternating Current",
+      "description": "Transformed the way electricity is transmitted and used worldwide"
+    }
+  ]
+},
+  {
+    id: "isambard-kingdom-brunel",
+    plateId: "B-ISAMBARD",
+    name: "Isambard Kingdom Brunel",
+    era: "industrial",
+    eraLabel: "Industrial Era",
+    lifespan: "1806-1859",
+    nationality: "British",
+    location: "Portsmouth, England",
+    disciplines: ["Civil Engineering","Mechanical Engineering","Naval Architecture"],
+    image: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&q=80&w=800",
+    biography: {
+      lead: "Pioneer in historic engineering breakthroughs.",
+      full: "Contributed foundational principles to applied engineering and technology."
+    },
+    voiceStory: "Imagine stepping into the workshop of a genius...",
+    accomplishments: ["Designed the Clifton Suspension Bridge","Built the SS Great Britain, a pioneering steamship","Developed the Great Western Railway, a major railway line in the UK"],
+    quote: "I am opposed to the laying down of rules or conditions to be observed in the construction of bridges lest the progress of improvement tomorrow might be embarrassed or shackled by recording or registering as law the prejudices or errors of today.",
+    quoteContext: "From a letter to the Institution of Civil Engineers, discussing the importance of innovation and flexibility in engineering design"
+  },
+  {
+    id: "alexander-graham-bell",
+    plateId: "B-ALEXANDE",
+    name: "Alexander Graham Bell",
+    era: "industrial",
+    eraLabel: "Industrial Era",
+    lifespan: "1847–1922",
+    nationality: "Scottish-American",
+    location: "United States",
+    disciplines: ["Telecommunications","Electrical Engineering"],
+    image: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&q=80&w=800",
+    biography: {
+      lead: "Alexander Graham Bell was a Scottish‑born inventor, scientist, and teacher of the deaf, best known for inventing the first practical telephone. His pioneering work in communication and auditory research laid the foundation for modern telecommunications and transformed education for the hearing impaired.",
+      full: "Born on March 3, 1847, in Edinburgh, Scotland, Alexander Graham Bell grew up in a family deeply involved in the study of speech and elocution; his father, Alexander Melville Bell, was a renowned phonetician who developed Visible Speech, a system to teach the deaf to speak. After studying at the University of Edinburgh and University College London, Bell moved to Canada in 1870 with his family, settling in Brantford, Ontario, where he continued his work on vocal physiology and began teaching at the Boston School for Deaf Mutes in 1871, marrying his passion for sound with a commitment to improving the lives of the hearing impaired.\n\nIn the early 1870s, while experimenting with harmonic telegraphy to send multiple telegraph signals over a single wire, Bell and his assistant Thomas Watson succeeded in transmitting sound electrically. On February 14, 1876, Bell filed a patent for \"Improvements in Telegraphy,\" which covered the telephone concept. The breakthrough came on March 10, 1876, when Bell spoke the famous words \"Mr. Watson, come here—I want to see you\" into his liquid transmitter, and Watson heard them clearly in the next room, marking the first intelligible telephone call. Bell subsequently founded the Bell Telephone Company in 1877, and the telephone rapidly spread, reshaping business, personal communication, and society at large.\n\nBeyond the telephone, Bell’s inventive mind never rested: he developed the photophone, which transmitted sound on a beam of light—a precursor to fiber‑optic communication; he joined the Aerial Experiment Association, contributing to early aviation breakthroughs like the Silver Dart; he worked on hydrofoil boats and helped establish the National Geographic Society as its second president. A lifelong advocate for deaf education, Bell mentored Helen Keller and supported numerous institutions for the hearing impaired. He died on August 2, 1922, in Nova Scotia, leaving a legacy that endures in every phone call, every spoken word transmitted across distance, and every effort to bridge the silence between people."
+    },
+    voiceStory: "NARRATOR: In a cramped Boston laboratory on March 10, 1876, Alexander Graham Bell leans over a tangled mess of wires and a liquid transmitter, his brow furrowed with concentration.\nBELL: (whispering, almost to himself) Mr. Watson, come here—I want to see you.\nWATSON (off‑stage, faint but clear): Mr. Bell?\nBELL: (eyes widening, voice trembling with excitement) You heard it! The speech travels through the wire!\nNARRATOR: The first intelligible sentence transmitted electrically echoes through the room, marking the birth of the telephone. Bell’s laughter mixes with the crackle of the apparatus, a sound that will soon travel across continents.",
+    accomplishments: ["Patented the telephone in 1876, revolutionizing global communication","Founded the Bell Telephone Company, the precursor to today's AT&T","Advanced acoustic phonetics and invented early hearing‑aid devices","Co‑founded the National Geographic Society in 1888"],
+    quote: "When one door closes, another opens; but we often look so long and so regretfully upon the closed door that we do not see the one which has opened for us.",
+    quoteContext: "Bell reflected on perseverance and innovation during a speech at the 1908 National Geographic Society meeting."
+  }
 ];
 
 export const disciplinesData: Discipline[] = [
