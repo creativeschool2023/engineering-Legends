@@ -896,6 +896,26 @@ export const engineers: Engineer[] = [
     accomplishments: ["Designed the Clifton Suspension Bridge","Built the SS Great Britain, a pioneering steamship","Developed the Great Western Railway, a major railway line in the UK"],
     quote: "I am opposed to the laying down of rules or conditions to be observed in the construction of bridges lest the progress of improvement tomorrow might be embarrassed or shackled by recording or registering as law the prejudices or errors of today.",
     quoteContext: "From a letter to the Institution of Civil Engineers, discussing the importance of innovation and flexibility in engineering design"
+  },
+  {
+    id: "alexander-graham-bell",
+    plateId: "B-ALEXANDE",
+    name: "Alexander Graham Bell",
+    era: "industrial",
+    eraLabel: "Industrial Era",
+    lifespan: "1847–1922",
+    nationality: "Scottish-American",
+    location: "United States",
+    disciplines: ["Telecommunications","Electrical Engineering"],
+    image: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&q=80&w=800",
+    biography: {
+      lead: "Pioneer in historic engineering breakthroughs.",
+      full: "Contributed foundational principles to applied engineering and technology."
+    },
+    voiceStory: "Imagine stepping into the workshop of a genius...",
+    accomplishments: ["Patented the telephone in 1876, revolutionizing global communication","Founded the Bell Telephone Company, the precursor to today's AT&T","Advanced acoustic phonetics and invented early hearing‑aid devices","Co‑founded the National Geographic Society in 1888"],
+    quote: "When one door closes, another opens; but we often look so long and so regretfully upon the closed door that we do not see the one which has opened for us.",
+    quoteContext: "Bell reflected on perseverance and innovation during a speech at the 1908 National Geographic Society meeting."
   }
 ];
 
